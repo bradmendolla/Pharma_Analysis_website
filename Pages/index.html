@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
@@ -19,16 +21,13 @@
             <div class="col-md-6">
                 <h2><a href="index.html">Latitude</a></h2>
             </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+            <div class="col-md-2">
+                <select id="nav-select">
+                    <option value="temperature.html">Temperature</option>
+                    <option value="about">About</option>
+                    <option value="portfolio">Portfolio</option>
+                    <option value="contact">Contact</option>
+                </select>
             </div>
             <div class="col-md-1">
                 <h2><a href="data.html">Data</a></h2>
@@ -38,4 +37,52 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+    <div class="container box">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="temperature.png">
+            </div>
+            <div class="col-md-4">
+                <p>The goal of this project was to analyze the temperature, humidity, cloudiness, and wind speed of
+                    various cities as we get closer to the equator and determine if any increased. To accomplish this we
+                    gathered data from various cities via OpenWeathermap API calls. </p>
+                <p>After assembling the dataset, we cleaned the data with pandas munging and made visualizations with
+                    matplotlib. This site contains the raw data and the various visualizations</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+    <div class="container box">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="temperature.html"><img src="temperature.png"></a>
+            </div>
+            <div class="col-md-6">
+                <a href="humidity.html"><img src="humidity.png" href="humidity.html"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container box">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="cloudiness.html"><img src="Cloudiness.png"></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="windspeed.html"><img src="Wind_Speed.png" href="humidity.html"></a>
+                </div>
+            </div>
+        </div>
 </body>
