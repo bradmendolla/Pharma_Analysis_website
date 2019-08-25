@@ -22,12 +22,15 @@
                 <h2><a href="index.html">Latitude</a></h2>
             </div>
             <div class="col-md-2">
-                <select id="nav-select">
-                    <option value="temperature.html">Temperature</option>
-                    <option value="about">About</option>
-                    <option value="portfolio">Portfolio</option>
-                    <option value="contact">Contact</option>
-                </select>
+                <div class="dropdown">
+                    <button class="dropbtn">Plots</button>
+                    <div class="dropdown-content">
+                      <a href="temperature.html">Temperature</a>
+                      <a href="humidity.html">Humidity</a>
+                      <a href="cloudiness.html">Cloudiness</a>
+                      <a href="windspeed.html">Windspeed</a>
+                    </div>
+                  </div> 
             </div>
             <div class="col-md-1">
                 <h2><a href="data.html">Data</a></h2>
@@ -46,7 +49,7 @@
     </div>
     <div class="container box">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="temperature.png">
             </div>
             <div class="col-md-4">
